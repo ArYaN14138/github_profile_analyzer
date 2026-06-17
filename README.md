@@ -35,6 +35,16 @@ https://github-profile-analyzer-1-nnos.onrender.com
 
 ---
 
+## Key Architectural Design Patterns
+
+To ensure production-readiness, scalability, and code maintainability, the following design principles were followed:
+*   **Separation of Concerns (MVC)**: Decouples business logic (Services), database queries (Models), routing rules (Routes), and request handling (Controllers).
+*   **Connection Pooling**: Uses `mysql2/promise` connection pooling to reuse database database connections, minimizing overhead under heavy traffic.
+*   **Fail-Safe Graceful Degrades**: Avoids hard process crashing on database connectivity drops, allowing port-binding and health checks to pass in cloud environments.
+*   **Centralized Error Handling**: A global Express middleware handles all internal server errors, database anomalies, and route discrepancies uniformly.
+
+---
+
 ## Database Schema (`github_analyzer`)
 
 The application stores the analyzed profile data and insights in a MySQL table named `github_profiles` with the following schema:
