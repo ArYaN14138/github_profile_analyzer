@@ -250,3 +250,18 @@ npm install
       }
     }
     ```
+
+---
+
+## Postman Collection
+
+This repository contains a pre-configured Postman collection JSON file to help you test the endpoints:
+*   [GitHub_Profile_Analyzer_API.postman_collection.json](file:///Users/aryanvishwakarma/github-profile-analyzer/GitHub_Profile_Analyzer_API.postman_collection.json)
+
+### How to Import and Use:
+1. Open the **Postman** application.
+2. Click the **Import** button (usually located in the top-left area).
+3. Drag and drop or select the `GitHub_Profile_Analyzer_API.postman_collection.json` file from this project's root folder.
+4. Once imported, select the collection and go to the **Variables** tab to adjust the `BASE_URL` (defaults to `http://localhost:5000` for local testing, or you can change it to your live Render/Railway URL).
+5. Send requests to test the API!
+
