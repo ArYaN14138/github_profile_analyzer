@@ -4,6 +4,21 @@ A complete, production-ready backend application built with **Node.js**, **Expre
 
 ---
 
+## Live Deployment
+
+**Base URL:**
+https://github-profile-analyzer-1-nnos.onrender.com
+
+---
+
+## Deployment Architecture
+
+*   **Backend API:** Render
+*   **Database:** Railway MySQL
+*   **External Service:** GitHub Public API
+
+---
+
 ## Tech Stack
 
 *   **Runtime:** Node.js
@@ -137,6 +152,7 @@ npm install
 
 ### 1. Base Endpoint
 *   **URL:** `GET /`
+*   **Production URL:** https://github-profile-analyzer-1-nnos.onrender.com/
 *   **Response:**
     ```json
     {
@@ -149,6 +165,7 @@ npm install
 
 ### 2. Health Check
 *   **URL:** `GET /health`
+*   **Production URL:** https://github-profile-analyzer-1-nnos.onrender.com/health
 *   **Response (Success):**
     ```json
     {
@@ -163,6 +180,7 @@ npm install
 ### 3. Analyze & Save Profile
 *   **URL:** `POST /api/github/analyze/:username`
 *   **Method:** `POST`
+*   **Production URL:** https://github-profile-analyzer-1-nnos.onrender.com/api/github/analyze/octocat
 *   **Response (Success - 201 Created):**
     ```json
     {
@@ -197,6 +215,7 @@ npm install
 ### 4. Get All Analyzed Profiles
 *   **URL:** `GET /api/github/profiles`
 *   **Method:** `GET`
+*   **Production URL:** https://github-profile-analyzer-1-nnos.onrender.com/api/github/profiles
 *   **Response (Success - 200 OK):**
     ```json
     {
@@ -227,6 +246,7 @@ npm install
 ### 5. Get Single Profile
 *   **URL:** `GET /api/github/profiles/:username`
 *   **Method:** `GET`
+*   **Production URL:** https://github-profile-analyzer-1-nnos.onrender.com/api/github/profiles/octocat
 *   **Response (Success - 200 OK):**
     ```json
     {
@@ -255,13 +275,38 @@ npm install
 
 ## Postman Collection
 
-This repository contains a pre-configured Postman collection JSON file to help you test the endpoints:
-*   [GitHub_Profile_Analyzer_API.postman_collection.json](file:///Users/aryanvishwakarma/github-profile-analyzer/GitHub_Profile_Analyzer_API.postman_collection.json)
+The repository contains a Postman collection file:
+`GitHub_Profile_Analyzer_API.postman_collection.json`
 
-### How to Import and Use:
-1. Open the **Postman** application.
-2. Click the **Import** button (usually located in the top-left area).
-3. Drag and drop or select the `GitHub_Profile_Analyzer_API.postman_collection.json` file from this project's root folder.
-4. Once imported, select the collection and go to the **Variables** tab to adjust the `BASE_URL` (defaults to `http://localhost:5000` for local testing, or you can change it to your live Render/Railway URL).
-5. Send requests to test the API!
+Import this file into Postman to test all API endpoints.
+
+Steps:
+1. Open Postman.
+2. Click Import.
+3. Select `GitHub_Profile_Analyzer_API.postman_collection.json`.
+4. Update `BASE_URL` if needed.
+5. Run the requests.
+
+---
+
+## Live Testing
+
+**Base URL:**
+https://github-profile-analyzer-1-nnos.onrender.com
+
+### Available Endpoints:
+*   `GET /`
+*   `GET /health`
+*   `POST /api/github/analyze/:username`
+*   `GET /api/github/profiles`
+*   `GET /api/github/profiles/:username`
+
+---
+
+## Author
+
+**Aryan Vishwakarma**
+*   B.Tech Computer Science Engineering
+*   GitHub: https://github.com/ArYaN14138
+
 
