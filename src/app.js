@@ -14,9 +14,9 @@ pool.getConnection()
     connection.release();
   })
   .catch((error) => {
-    console.error('CRITICAL: Database connection failed during startup!');
+    console.error('WARNING: Database connection failed during startup! The server will start, but database-dependent features will be offline until connected.');
     console.error(error.message);
-    process.exit(1);
+    // Do not call process.exit(1) to avoid port binding / deployment timeouts on cloud hosting platforms
   });
 
 // Register Middlewares
