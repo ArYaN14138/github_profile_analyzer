@@ -45,6 +45,15 @@ To ensure production-readiness, scalability, and code maintainability, the follo
 
 ---
 
+## MySQL Connection Pooling Benefits
+
+Rather than opening and closing a new database connection for every incoming HTTP request (which creates socket overhead and slows down response times), this project utilizes **MySQL Connection Pooling** via `mysql2/promise`:
+*   **Reusability**: Pre-established connections are kept alive in a pool, waiting to be reused.
+*   **Speed & Performance**: Overhead of TCP handshakes and database authentication is eliminated for subsequent requests.
+*   **Concurrency Control**: Safely handles multiple parallel API requests by limiting and sharing active connection slots.
+
+---
+
 ## Database Schema (`github_analyzer`)
 
 The application stores the analyzed profile data and insights in a MySQL table named `github_profiles` with the following schema:
