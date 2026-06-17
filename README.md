@@ -126,6 +126,10 @@ Or in the terminal:
 mysql -u root -p < schema.sql
 ```
 
+> [!TIP]
+> **Mac Localhost Connection Issue**:
+> If you are running the project on macOS and encounter a database connection error during startup (e.g., `connect ECONNREFUSED ::1:3306`), it is because Node.js is trying to resolve `localhost` via IPv6. You can easily resolve this by setting `DB_HOST=127.0.0.1` in your local `.env` file instead of `localhost`.
+
 ### 3. Environment Setup
 Copy the configuration template to create a `.env` file:
 ```bash
