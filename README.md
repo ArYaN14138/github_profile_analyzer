@@ -1,5 +1,10 @@
 # GitHub Profile Analyzer API
 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+
 A complete, production-ready backend application built with **Node.js**, **Express.js**, and **MySQL** that integrates with the GitHub Public API to analyze user profiles, calculate custom insights, and store them securely in a database.
 
 ---
