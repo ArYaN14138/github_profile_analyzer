@@ -322,6 +322,15 @@ https://github-profile-analyzer-1-nnos.onrender.com
 
 ---
 
+## Future Scope & Enhancements
+
+To expand this application in the future:
+*   **Redis Caching**: Implement an in-memory Redis cache to store profile insights for 24 hours to reduce external API rate consumption.
+*   **Cron Job Sync**: Set up a background cron scheduler to pull updates for stored profiles daily.
+*   **Frontend Dashboard**: Build a React/Next.js interface displaying developer insights, profile scores, and comparative graphs.
+
+---
+
 ## Author
 
 **Aryan Vishwakarma**
